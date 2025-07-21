@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #121212;
+  color: #E0F7FA;
+}
+
+/* Scrollbar personalizada para tema oscuro */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4DB6AC;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #82E9DE;
+}
+
+/* Efectos de transición globales */
+a, button {
+  transition: all 0.3s ease;
+}
+
+/* Gradientes personalizados */
+.mint-gradient {
+  background: linear-gradient(135deg, #4DB6AC 0%, #00867D 100%);
+}
+
+/* Sombras neon para elementos destacados */
+.neon-glow {
+  box-shadow: 0 0 15px rgba(77, 182, 172, 0.5);
+}
+
+/* Animaciones */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating {
+  animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
